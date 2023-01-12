@@ -27,7 +27,7 @@ body {
   height: 64px;
 }
 
-.logotaza{
+.logotaza {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -62,7 +62,10 @@ nav {
   gap: 15px;
 }
 
-a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
+a[href*="pages"],
+a[href="tienda.html"],
+a[href=""],
+a[href="tel:+34919490518"] {
   color: white;
   text-decoration: none;
 }
@@ -72,22 +75,22 @@ a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
 
 
 /*seccion 1 debajo del nav incluye imagen titulo y subtitulo*/
-.firstsection{
+.firstsection {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  text-align: left;
   align-items: center;
   padding: 48px 40px;
   gap: 8px;
 }
 
-.grains{
+.grains {
   width: 588pxx;
   height: 390px;
   border-radius: 20px;
 }
 
-.cupplant{
+.cupplant {
   width: 588px;
   height: 24px;
   font-size: 18px;
@@ -145,13 +148,13 @@ a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
 
 /*parte 2  que incluye la imagen de cafe de fondo y tres recuadros */
 
-.part2{
-  /* background-image: url('../assets/unknown2.png'); */
+.part2 {
   background-size: 100%;
   padding: 48px;
-  /* background-position: center; */ 
+  /* background-position: center; */
 }
-.titlepart2{
+
+.titlepart2 {
   display: flex;
   justify-content: center;
   color: #FFFFFF;
@@ -160,14 +163,17 @@ a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
   padding: 24px;
 }
 
-.boxes{
+.boxes {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 30px;
   align-content: center;
 }
-.send, .receiveorder, .discounts{
+
+.send,
+.receiveorder,
+.discounts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,12 +185,14 @@ a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
   width: 100%;
   font-size: 12px;
 }
-.logoparte2{
+
+.logoparte2 {
   background-color: #2A5B45;
   padding: 15px;
   border-radius: 15px;
 }
-.getcoffee{
+
+.getcoffee {
   font-size: 16px;
   line-height: 16px;
 }
@@ -195,7 +203,7 @@ a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
   padding: 15px;
 }
 
-.titlenovedades{
+.titlenovedades {
   color: #2A5B45;
   display: flex;
   justify-content: center;
@@ -207,26 +215,26 @@ a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
   font-weight: 500;
 }
 
-.bag{
+.bag {
   border: 1px solid #E3DED7;
   border-radius: 8px;
   padding: 8px;
 }
 
 
-.bag:hover{
+.bag:hover {
   box-sizing: border-box;
   background: #F7F5F3;
   border: 1px solid #E3DED7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.addbutton:hover{
-background-color: #2A5B45;
+.addbutton:hover {
+  background-color: #2A5B45;
 }
 
 
-.bagimg{
+.bagimg {
   height: 219px;
   width: 219px;
   padding: 24px;
@@ -242,7 +250,7 @@ background-color: #2A5B45;
   border-radius: 4px;
   border: #2A5B45;
   color: white;
-  background-color:rgba(42, 91, 69, 0.7);
+  background-color: rgba(42, 91, 69, 0.7);
   font-size: 14px;
   width: 60px;
   height: 32px;
@@ -308,24 +316,26 @@ background-color: #2A5B45;
   color: #2B2A2B;
 }
 
-.frequentquestions{
+.frequentquestions {
   color: white;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   padding: 15px;
 }
-.lowpricesquestion{
+
+.lowpricesquestion {
   font-size: 18px;
 }
 
 
 
-.line{
+.line {
   width: 620px;
   color: solid black;
 }
-.innertext{
+
+.innertext {
   padding-top: 10px;
   font-size: 12px;
 }
@@ -336,13 +346,13 @@ background-color: #2A5B45;
   justify-content: space-between;
 }
 
-.openingicon{
+.openingicon {
   height: 6px;
   width: 10px;
   border: none;
 }
 
-#linkquestions{
+#linkquestions {
   padding-top: 15px;
 }
 
@@ -374,15 +384,15 @@ background-color: #2A5B45;
 }
 
 .visitcoffeeshop {
-font-size: 15px;
+  font-size: 15px;
 }
 
-#hero >img {
- height: 390px;
- width: 550px;
- left: 612px;
- top: 0px;
- border-radius: 20px;
+#hero>img {
+  height: 390px;
+  width: 550px;
+  left: 612px;
+  top: 0px;
+  border-radius: 20px;
 }
 
 
@@ -392,6 +402,7 @@ font-size: 15px;
   flex-direction: row;
   justify-content: space-around;
   background: #E3DED7;
+  text-align: left;
 }
 
 .containerpart6 {
@@ -453,6 +464,21 @@ font-size: 15px;
 
 }
 
+.errorP {
+  color: #bf1650;
+  font-size: 17px;
+  text-align: left;
+}
+
+.errorP::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.error {
+  border: 1px solid #bf1650;
+}
+
 .containerform {
   display: flex;
   flex-direction: column;
@@ -487,7 +513,7 @@ font-size: 15px;
   color: #374151;
 }
 
-.type,
+#type,
 .telefono {
   border-radius: 6px;
   border: 1px solid #D1D5DB;
@@ -526,7 +552,7 @@ a[href*="checkbox"] {
 
 
 /*validacion de formulario */
-.type:valid,.textarea:valid, .numberphone:valid{
+/* .type:valid,.textarea:valid, .numberphone:valid{
   border: 2px solid green;
 }
 .type:valid,.textarea:valid, .numberphone:valid{
@@ -540,7 +566,7 @@ a[href*="checkbox"] {
 }
 .type:invalid:required, .textarea:invalid:required, .numberphone:invalid:required {
   background-color: 2px solid;
-}  
+}   */
 
 
 
@@ -559,17 +585,20 @@ footer {
 }
 
 #logocafedealtura {
+  margin-left: 23px;
+  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 24px;
-  gap: 22px;
+  gap: 12px;
 }
 
 #teayudamos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  text-align: left;
 }
 
 .ayudamos {
@@ -608,7 +637,7 @@ footer {
   gap: 10px;
 }
 
-#parte8{
+#parte8 {
   background: #2B2A2B;
   color: white;
   display: flex;
@@ -619,13 +648,14 @@ footer {
 
 
 /* Segunda pagina de HTML- carrito de compra */
-.pagcesta{
+.pagcesta {
   display: flex;
   justify-content: center;
   padding: 40px;
 
 }
-.articleaside{
+
+.articleaside {
   display: flex;
   flex-direction: row;
   justify-content: space-around;

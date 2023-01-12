@@ -11,17 +11,17 @@ import Seccion6 from './components/Seccion-6';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Seccion2 />
-      <Seccion3 />
-      <Seccion4 />
-      <Seccion5 />
-      <Seccion6 />
-      <Footer /> 
-      
-      {/*
-      
-    */}
+      <body>
+        <div id='container'>
+          <Nav />
+          <Seccion2 />
+          <Seccion3 />
+          <Seccion4 />
+          <Seccion5 />
+          <Seccion6 />
+          <Footer />
+        </div>
+      </body>
     </div >
   );
 }

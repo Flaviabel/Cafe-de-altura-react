@@ -9,7 +9,7 @@ function Seccion3() {
 
                     <main class="coffeebag">
                         <div class="bag">
-                            <div><img class="bagimg" src="assets/coffe.svg" alt="coffe bag" /></div>
+                            <div><img class="bagimg" src="images/coffe.svg" alt="coffe bag" /></div>
                             <div class="h4">
                                 <h4 class="nombre">Costa Rica Tarrazú </h4>
                             </div>
@@ -21,7 +21,7 @@ function Seccion3() {
                         </div>
 
                         <div class="bag">
-                            <div><img class="bagimg" src="assets/coffe 1.svg" alt="coffe bag" /></div>
+                            <div><img class="bagimg" src="images/coffe%201.svg" alt="coffe bag" /></div>
                             <div class="h4">
                                 <h4 class="nombre">Colombia Los Naranjos</h4>
                             </div>
@@ -32,7 +32,7 @@ function Seccion3() {
                         value="Añadir" /></div>
             </div>
             <div class="bag">
-                <img class="bagimg" src="assets/coffe 2.svg" alt="coffe bag"/>
+                <img class="bagimg" src="images/coffe%202.svg" alt="coffe bag"/>
                 <div class="h4">
                     <h4 class="nombre">Cafe Madrid</h4>
                 </div>
@@ -43,7 +43,7 @@ function Seccion3() {
                         value="Añadir" /></div>
             </div>
             <div class="bag">
-                <div><img class="bagimg" src="assets/coffe 3.png" alt="coffe bag"/><br /></div>
+                <div><img class="bagimg" src="images/coffe 3.png" alt="coffe bag"/><br /></div>
                 <div class="h4">
                      <h4 class="nombre">Etiopia Yrgacheff </h4>
                 </div>
@@ -57,7 +57,7 @@ function Seccion3() {
 
         <div class="vertodos">
             <a id="enlacever" href="tienda.html">Ver todos</a>
-            <img id="flecha" src="assets/ver todos.png" alt="flecha"/>
+            <img id="flecha" src="images/ver todos.png" alt="flecha"/>
         </div>
 
     </section>

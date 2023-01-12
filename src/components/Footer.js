@@ -6,7 +6,7 @@ function Footer() {
                     <section className="parte7">
                         <div id="logocafedealtura">
                             <a href="">cafedealtura.com</a>
-                            <img src="assets/taza de cafe.png" alt="taza de cafe" />
+                            <img src="images/taza de cafe.png" alt="taza de cafe" />
                         </div>
 
                         <main id="teayudamos">
@@ -16,10 +16,10 @@ function Footer() {
                                 </div>
                                 <div className="botonesdecontacto">
                                     <div>
-                                        <button className="button"><img src="assets/Phone.svg" alt="phone" />+34 919 49 0518</button>
+                                        <button className="button"><img src="images/Phone.svg" alt="phone" />+34 919 49 0518</button>
                                     </div>
                                     <div>
-                                        <button className="button"><img id="botonmail" src="assets/Iconfooter.png"
+                                        <button className="button"><img id="botonmail" src="images/Iconfooter.png"
                                             alt="" />hola@cafedealtura.com</button>
                                     </div>
                                 </div>
