@@ -1,3 +1,5 @@
+import { Outlet, Link } from "react-router-dom";
+
 function Nav() {
     return (
         <div>
@@ -11,12 +13,14 @@ function Nav() {
                                 <img src="images/taza de cafe.png" alt="taza de cafe" />
                             </div>
                             <nav>
+                                <Link to="/tienda">Tienda</Link>
                                 <a href="tienda.html">Tienda</a>
                                 <a href="pages/suscripcion.html" target="_blank">Suscripción</a>
                                 <a href="pages/paraempresas.html" target="_blank">Para empresas</a>
                                 <a href="pages/sobre_nosotros.html" target="_blank">Sobre nosotros</a>
                                 <a href="pages/contacto.html" target="_blank">Contacto</a>
                             </nav>
+
                             <div className="logophone">
                                 <img src="/images/Phone.svg" alt="phone" />
                                 <a href="tel:+34919490518">+34 919 49 05 18</a>
@@ -25,6 +29,7 @@ function Nav() {
                             <div className="shoppingcart"> <a href="cesta.html"><img src="images/fin de nav.png" alt="" /></a>
                             </div>
                         </main>
+                            <Outlet />
                         <div className="firstsection">
                             <article className="article">
                                 <h3 className="cupplant">De la planta a tu taza</h3>
