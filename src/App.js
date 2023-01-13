@@ -9,6 +9,10 @@ import Seccion5 from './components/Seccion-5';
 import Seccion6 from './components/Seccion-6';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Tienda from './components/Tienda';
+import Suscripcion from './components/Suscripcion';
+import Contactos from './components/Contactos';
+import Empresas from './components/Empresas';
+import Nosotros from './components/Nosotros'
 
 function App() {
   return (
@@ -19,7 +23,11 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Nav />}>
-                <Route path="/tienda" element={<Tienda />}></Route>
+                <Route path='tienda' element={<Tienda />} />
+                <Route path='suscripcion' element={<Suscripcion />} />
+                <Route path='empresas' element={<Empresas />} />
+                <Route path='contacto' element={<Contactos />} />
+                <Route path='nosotros' element={<Nosotros />} />
               </Route>
             </Routes>
           </BrowserRouter>

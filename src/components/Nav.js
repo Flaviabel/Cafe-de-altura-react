@@ -9,16 +9,15 @@ function Nav() {
                         <a href="">Home</a>
                         <main className="part1">
                             <div className="logotaza">
-                                <a href="">cafedealtura.com</a>
+                                <a href="http://localhost:3000/">cafedealtura.com</a>
                                 <img src="images/taza de cafe.png" alt="taza de cafe" />
                             </div>
                             <nav>
-                                <Link to="/tienda">Tienda</Link>
-                                <a href="tienda.html">Tienda</a>
-                                <a href="pages/suscripcion.html" target="_blank">Suscripción</a>
-                                <a href="pages/paraempresas.html" target="_blank">Para empresas</a>
-                                <a href="pages/sobre_nosotros.html" target="_blank">Sobre nosotros</a>
-                                <a href="pages/contacto.html" target="_blank">Contacto</a>
+                                <Link to="/tienda" className="tienda-link">Tienda</Link>
+                                <Link to="/suscripcion" className="tienda-link">Suscripcion</Link>
+                                <Link to="/empresas" className="tienda-link">Para empresas</Link>
+                                <Link to="/nosotros" className="tienda-link">Sobre nosotros</Link>
+                                <Link to="/contacto" className="tienda-link">Contacto</Link>
                             </nav>
 
                             <div className="logophone">
@@ -29,7 +28,7 @@ function Nav() {
                             <div className="shoppingcart"> <a href="cesta.html"><img src="images/fin de nav.png" alt="" /></a>
                             </div>
                         </main>
-                            <Outlet />
+                        <Outlet />
                         <div className="firstsection">
                             <article className="article">
                                 <h3 className="cupplant">De la planta a tu taza</h3>

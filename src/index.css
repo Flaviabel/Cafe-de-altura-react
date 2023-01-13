@@ -65,7 +65,8 @@ nav {
 a[href*="pages"],
 a[href="tienda.html"],
 a[href=""],
-a[href="tel:+34919490518"] {
+a[href="tel:+34919490518"],
+.tienda-link, a[href="http://localhost:3000/"] {
   color: white;
   text-decoration: none;
 }
@@ -659,4 +660,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+/* Tienda */
+
+.productsBagsList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 80px;
 }

@@ -1,4 +1,6 @@
-
+import Footer from "./Footer";
+import Seccion2 from "./seccion-2";
+import { Link } from "react-router-dom";
 function Tienda() {
     return (
         <div>
@@ -6,22 +8,22 @@ function Tienda() {
                 <body>
                     <main className="part1">
                         <div className="logotaza">
-                            <a href="index.html">cafedealtura.com</a>
-                            <img src="assets/taza de cafe.png" alt="taza de cafe" />
+                            <a href="http://localhost:3000/">cafedealtura.com</a>
+                            <img src="images/taza de cafe.png" alt="taza de cafe" />
                         </div>
                         <nav>
-                            <a href="Tienda.js">Tienda</a>
-                            <a href="pages/suscripcion.html" target="_blank">Suscripción</a>
-                            <a href="pages/paraempresas.html" target="_blank">Para empresas</a>
-                            <a href="pages/sobre_nosotros.html" target="_blank">Sobre nosotros</a>
-                            <a href="pages/contacto.html" target="_blank">Contacto</a>
+                            <Link to="/tienda" className="tienda-link">Tienda</Link>
+                            <Link to="/suscripcion" className="tienda-link">Suscripcion</Link>
+                            <Link to="/empresas" className="tienda-link">Para empresas</Link>
+                            <Link to="/nosotros" className="tienda-link">Sobre nosotros</Link>
+                            <Link to="/contacto" className="tienda-link">Contacto</Link>
                         </nav>
                         <div className="logophone">
-                            <img src="assets/Phone.svg" alt="phone" />
+                            <img src="images/Phone.svg" alt="phone" />
                             <a href="tel:+34919490518">+34 919 49 05 18</a>
                             <input className="login" type="submit" value="Iniciar sesión" />
                         </div>
-                        <div className="shoppingcart"> <a href="cesta.html"><img src="assets/fin de nav.png" alt="" /></a>
+                        <div className="shoppingcart"> <a href="cesta.html"><img src="images/fin de nav.png" alt="" /></a>
                         </div>
                     </main>
                     <div className="pagcesta"><h1 >Tienda</h1></div>
@@ -35,65 +37,44 @@ function Tienda() {
                         <div>
                             <main className="items" ></main>
                             {/* className="bagproducts" */}
-                            <aside>
-                                <h2 className="carrito">Carrito</h2>
-                                <ul className="carrito"></ul>
-
-                                <p className="carrito">Total: <span className="total"></span></p>
-                                <button className="boton-vaciar" >Vaciar</button>
-                                {/* className="carrito" */}
-                            </aside>
                         </div>
                     </div>
-
-                    <footer>
-                        <section className="parte7">
-                            <div id="logocafedealtura">
-                                <a href="">cafedealtura.com</a>
-                                <img src="assets/taza de cafe.png" alt="taza de cafe" />
+                    <section className="productsBagsList">
+                        <div class="coffeebag">
+                            <div class="bag">
+                                <img className="bagimg" src='images/coffe.svg' />
+                                <h1 class="nombre">Title</h1>
+                                <p>Price $$$</p>
+                                <button class="addbutton">Añadir</button>
                             </div>
-
-                            <main id="teayudamos">
-                                <div className="ayudamos">
-                                    <div>
-                                        <p>Te ayudamos en</p>
-                                    </div>
-                                    <div className="botonesdecontacto">
-                                        <div>
-                                            <button className="button"><img src="assets/Phone.svg" alt="phone" />+34 919 49 0518</button>
-                                        </div>
-                                        <div>
-                                            <button className="button"><img id="botonmail" src="assets/Iconfooter.png"
-                                                alt="" />hola@cafedealtura.com</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <section className="linkfoo">
-
-                                    <div className="linksfooter">
-                                        <a href="">Tienda</a>
-                                        <a href="">Suscripcion</a>
-                                        <a href="">Para empresas</a>
-                                        <a href="">Sobre nosotros</a>
-                                        <a href="">Contacto</a>
-                                    </div>
-                                    <div className="linksfooter2">
-                                        <a href="">Politica de privacidad</a>
-                                        <a href="">Politica de cookies</a>
-                                        <a href="">Terminos y condiciones</a>
-                                    </div>
-                                </section>
-                            </main>
-                        </section>
-
-                        <section id="parte8">
-                            <p>Todos los derechos reservados- Cafe de altura SL-2022</p>
-                        </section>
-                    </footer>
+                        </div>
+                        <div class="coffeebag">
+                            <div class="bag">
+                                <img className="bagimg" src='images/coffe%201.svg' />
+                                <h1 class="nombre">Title</h1>
+                                <p>Price $$$</p>
+                                <button class="addbutton">Añadir</button>
+                            </div>
+                        </div>
+                        <div class="coffeebag">
+                            <div class="bag">
+                                <img className="bagimg" src='images/coffe%202.svg' />
+                                <h1 class="nombre">Title</h1>
+                                <p>Price $$$</p>
+                                <button class="addbutton">Añadir</button>
+                            </div>
+                        </div>
+                    </section>
+                    <aside>
+                        <p className="carrito">Total: <span className="total"></span></p>
+                        <button className="boton-vaciar" >Vaciar</button>
+                        {/* className="carrito" */}
+                    </aside>
+                    <Seccion2 />
+                    <Footer />
                 </body>
             }
-        </div>
+        </div >
     )
 }
 
