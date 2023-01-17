@@ -66,7 +66,8 @@ a[href*="pages"],
 a[href="tienda.html"],
 a[href=""],
 a[href="tel:+34919490518"],
-.tienda-link, a[href="http://localhost:3000/"] {
+.tienda-link,
+a[href="http://localhost:3000/"] {
   color: white;
   text-decoration: none;
 }
@@ -664,9 +665,20 @@ footer {
 
 /* Tienda */
 
-.productsBagsList{
+.productsBagsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 80px;
+  contain: content;
+}
+
+.tiendatotal {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 80px;
+  align-items: center;
+  gap: 25px;
 }

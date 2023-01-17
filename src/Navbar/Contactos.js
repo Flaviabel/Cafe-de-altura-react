@@ -1,8 +1,12 @@
-import Form from "./Form";
-function Seccion6() {
+import Footer from "../seccion/Footer";
+import Form from "../Components/Form";
+import Nav from "../seccion/Nav";
+
+function Contactos() {
     return (
         <div>
-            {
+            <div>
+                <Nav />
                 <section className="part6">
                     <main class="containerpart6">
                         <div className="textsection">
@@ -35,10 +39,10 @@ function Seccion6() {
                         <Form />
                     </main >
                 </section >
-
-            }
+                <Footer />
+            </div>
         </div >
     )
 }
 
-export default Seccion6;
+export default Contactos;

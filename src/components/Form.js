@@ -24,8 +24,6 @@ function Form() {
 
     const onSubmit = (userInfo) => console.log(userInfo);
 
-    console.log(errors);
-
     return (
         <div className="formulario">
 
