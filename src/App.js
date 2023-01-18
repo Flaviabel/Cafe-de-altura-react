@@ -7,23 +7,28 @@ import Empresas from './Navbar/Empresas';
 import Nosotros from './Navbar/Nosotros'
 import Paginaprincipal from './Home/Paginaprincipal';
 import CestaProvider from './Context/Cesta';
+import CestaCompra from './Navbar/CestaCompra';
+import IniciarSesion from './Navbar/IniciarSesion'
 
 function App() {
   return (
-      <div id='container'>
-        <BrowserRouter>
-          <CestaProvider>
-            <Routes>
-              <Route path="/" element={<Paginaprincipal />} />
-              <Route path='/tienda' element={<Tienda />} />
-              <Route path='/suscripcion' element={<Suscripcion />} />
-              <Route path='/empresas' element={<Empresas />} />
-              <Route path='/contacto' element={<Contactos />} />
-              <Route path='/nosotros' element={<Nosotros />} />
-            </Routes>
-          </CestaProvider>
-        </BrowserRouter>
-      </div>
+    <div id='container'>
+      <BrowserRouter>
+        <CestaProvider>
+          <Routes>
+            <Route path="/" element={<Paginaprincipal />} />
+            <Route path='/tienda' element={<Tienda />} />
+            <Route path='/suscripcion' element={<Suscripcion />} />
+            <Route path='/empresas' element={<Empresas />} />
+            <Route path='/contacto' element={<Contactos />} />
+            <Route path='/nosotros' element={<Nosotros />} />
+            <Route path='/cesta' element={<CestaCompra />} />
+            <Route path='/sesion' element={<IniciarSesion />} />
+
+          </Routes>
+        </CestaProvider>
+      </BrowserRouter>
+    </div>
   );
 }
 

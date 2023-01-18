@@ -54,6 +54,8 @@ nav {
 .shoppingcart {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .logophone {
@@ -670,9 +672,9 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-direction: column;
   padding: 80px;
-  contain: content;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .tiendatotal {
@@ -681,4 +683,83 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+
+.countp {
+  background-color: #374151;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+/* CESTA */
+
+.titlecesta {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  color: #2A5B45;
+}
+
+.cestacontain {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin: 20px;
+}
+
+.cestaenviofree {
+  display: flex;
+  flex-direction: row;
+}
+
+.cestaprecio {
+  display: flex;
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
+/* Formulario de inicio de sesion */
+
+.formulariosesion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E3DED7;
+  contain: content;
+  padding: 150px;
+  gap: 15px;
+
+}
+
+.usersesion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 22px;
+  color: #374151;
+}
+
+.inputsesion {
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  width: 410px;
+  height: 34px;
+}
+.titlesesion{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 32px;
+  color: black;
+}
+.buttonsesion{
+  border-radius: 4px;
+  border: #2A5B45;
+  color: white;
+  background-color: rgba(42, 91, 69, 0.7);
+  font-size: 14px;
+  width: 160px;
+  height: 32px;
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Cesta } from "../Context/Cesta";
 
 function Nav() {
-    const {count} = useContext(Cesta);
+    const { count } = useContext(Cesta);
 
     return (
         <div id="container">
@@ -25,13 +25,23 @@ function Nav() {
                     <div className="logophone">
                         <img src="/images/Phone.svg" alt="phone" />
                         <a href="tel:+34919490518">+34 919 49 05 18</a>
-                        <input className="login" type="submit" value="Iniciar sesión" />
+                        <Link to="/sesion">
+                            <input className="login" type="submit" value="Iniciar sesión" />
+                        </Link>
                     </div>
-                    <div className="shoppingcart"><Link to="/tienda" className="tienda-link"><img src="images/fin de nav.png" alt="" />{count}</Link>
+                    <div className="shoppingcart">
+                        <div>
+                            <Link to="/cesta" className="tienda-link">
+                                <img src="images/fin de nav.png" alt="" />
+                            </Link>
+                        </div>
+                        <div>
+                            <p className="countp">{count}€</p>
+                        </div>
                     </div>
-                </main>
-            </header>
-        </div>
+                </main >
+            </header >
+        </div >
     )
 }
 

@@ -1,12 +1,12 @@
-import { Children, createContext, useState } from "react";
+import { createContext, useState } from "react";
 
 export const Cesta = createContext();
 
 function CestaProvider({ children }) {
     const [count, setCount] = useState(0);
-    const [deleteCount, setDeleteCount] = useState({count})
+    const [countUnidad, setCountUnidad] = useState(0);
     return (
-        <Cesta.Provider value={{ count, setCount, deleteCount , setDeleteCount }}>
+        <Cesta.Provider value={{ count, setCount, countUnidad, setCountUnidad }}>
             {children}
         </Cesta.Provider>
     )

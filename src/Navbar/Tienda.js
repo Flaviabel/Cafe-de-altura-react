@@ -8,7 +8,8 @@ import { Cesta } from "../Context/Cesta";
 
 function Tienda() {
     const { count, setCount } = useContext(Cesta);
-    const { deleteCount, setDeleteCount } = useContext(Cesta);
+    const { countUnidad, setCountUnidad } = useContext(Cesta);
+
     return (
         <body>
             <Nav />
@@ -38,9 +39,8 @@ function Tienda() {
                                     <h4>{coffee.price}</h4>
                                 </div>
                                 <div class="buttonnovedades">
-                                    <button className="addbutton" type="submit" value="Añadir" onClick={() => setCount(count + 1)}>Añadir</button>
-                                    <button className="addbutton" type="submit" value="Añadir" onClick={() => setCount(count - 1)}>Eliminar</button>
-
+                                    <button className="addbutton" type="submit" value="Añadir" onClick={() => setCount(count + coffee.price) + setCountUnidad(countUnidad + 1)}>Añadir</button>
+                                    <button className="addbutton" type="submit" value="Añadir" onClick={() => setCount(count - coffee.price) + setCountUnidad(countUnidad + 1)}>Eliminar</button>
                                 </div>
                             </div>
                         )
@@ -48,9 +48,9 @@ function Tienda() {
                 }
             </div>
             <aside className="tiendatotal">
-                <p>Total: {count}</p>
+                <p>Total: {count}€</p>
                 <button className="addbutton" onClick={() => setCount(0)} >Vaciar</button>
-            </aside><br/><br/>
+            </aside><br /><br />
             <Seccion2 />
             <Footer />
         </body>

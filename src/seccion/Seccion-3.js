@@ -1,8 +1,11 @@
 import { useContext } from "react";
 import { Cesta } from "../Context/Cesta";
+import { Link } from "react-router-dom";
 
 function Seccion3() {
     const { count, setCount } = useContext(Cesta);
+    const { countUnidad, setCountUnidad } = useContext(Cesta);
+
 
     return (
         <div>
@@ -20,7 +23,7 @@ function Seccion3() {
                         <div class="precio">
                             <h4>9,00 €</h4>
                         </div>
-                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 1)} type="submit"
+                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 9) + setCountUnidad(countUnidad + 1)} type="submit"
                             value="Añadir" /></div>
                     </div>
 
@@ -32,7 +35,7 @@ function Seccion3() {
                         <div class="precio">
                             <h4>9,00 €</h4>
                         </div>
-                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 1)} type="submit"
+                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 9)  + setCountUnidad(countUnidad + 1)} type="submit"
                             value="Añadir" /></div>
                     </div>
                     <div class="bag">
@@ -43,7 +46,7 @@ function Seccion3() {
                         <div class="precio">
                             <h4>9,00 €</h4>
                         </div>
-                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 1)} type="submit"
+                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 9)  + setCountUnidad(countUnidad + 1)} type="submit"
                             value="Añadir" /></div>
                     </div>
                     <div class="bag">
@@ -54,13 +57,13 @@ function Seccion3() {
                         <div class="precio">
                             <h4>9,00 €</h4>
                         </div>
-                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 1)} type="submit"
+                        <div class="buttonnovedades"><input class="addbutton" onClick={() => setCount(count + 9)  + setCountUnidad(countUnidad + 1)} type="submit"
                             value="Añadir" /></div>
                     </div>
                 </main>
 
                 <div class="vertodos">
-                    <a id="enlacever" href="tienda.html">Ver todos</a>
+                <Link to="/tienda" className="tienda-link" id="enlacever">Ver todos</Link>
                     <img id="flecha" src="images/ver todos.png" alt="flecha" />
                 </div>
 
